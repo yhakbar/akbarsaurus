@@ -6,4 +6,4 @@ slug: "/"
 
 # Documentation
 
-This is the documentation for Docusaurus.
+This is the documentation for Akbarsaurus.
