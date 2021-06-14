@@ -8,7 +8,7 @@ description: Setting up CI for a site built using Docusaurus.
 hide_table_of_contents: false
 ---
 
-I demonstrated in [yesterday's blog][yesterday], the simple process of setting up Docusaurus to be run locally.
+In [yesterday's blog][yesterday], the simple process of setting up Docusaurus to be run locally was demonstrated.
 
 Today we're going through the process of getting this thing running in the cloud.
 
@@ -117,6 +117,24 @@ git commit -m "Adding CI blog post"
 git push -u origin feature/adding_ci_blog_post
 ```
 
+![Amplify Add Branch][amplify-add-branch]
+
+Branches will appear in the dropdown on the Amplify console in descending order of when they last received commits.
+
+![Amplify Branch Confirmation][amplify-add-branch-confirmation]
+
+Review the configuration you have selected, then hit `Save and deploy`.
+
+![Amplify Feature Environment][amplify-feature-environment]
+
+Upon configuring the feature branch, a separate environment is provisioned in the Amplify console, associated with that branch.
+
+![Amplify Feature Environment Complete][amplify-feature-environment-complete]
+
+Once complete, a separate environment will be available for you to test out your feature.
+
+![Feature Environment Screenshot][feature-environment-screenshot]
+
 [yesterday]: /blog/2021/06/12/trying-out-docusaurus
 [amplify-getting-started]: /img/amplify-getting-started.png
 [amplify-develop-or-deliver]: /img/amplify-develop-or-deliver.png
@@ -134,3 +152,8 @@ git push -u origin feature/adding_ci_blog_post
 [docs-rewording]: https://github.com/yhakbar/akbarsaurus/commit/c7b6dcc1e75b6bcc0504d0d74fa5f60536229027
 [docs-home-page]: /docs/
 [amplify-ci-triggered]: /img/amplify-ci-triggered.png
+[amplify-add-branch]: /img/amplify-add-branch.png
+[amplify-add-branch-confirmation]: /img/amplify-add-branch-confirmation.png
+[amplify-feature-environment]: /img/amplify-feature-environment.png
+[amplify-feature-environment-complete]: /img/amplify-feature-environment-complete.png
+[feature-environment-screenshot]: /img/feature-environment-screenshot.png
