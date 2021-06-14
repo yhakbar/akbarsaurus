@@ -11,6 +11,7 @@ module.exports = {
   projectName: 'akbarsaurus',
   customFields: {
     githubFileUrl: 'https://github.com/yhakbar/akbarsaurus/blob/main',
+    githubFolderUrl: 'https://github.com/yhakbar/akbarsaurus/tree/main',
   },
   themeConfig: {
     navbar: {

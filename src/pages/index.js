@@ -23,6 +23,12 @@ function getBlobLink(url) {
   return `${siteConfig.customFields.githubFileUrl}${url}`
 }
 
+function getFolderLink(url) {
+  const { siteConfig } = useDocusaurusContext();
+  if (url[0] !== '/') url = '/' + url
+  return `${siteConfig.customFields.githubFolderUrl}${url}`
+}
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -44,7 +50,7 @@ export default function Home() {
           <p>It has built in <Link to="/blog">blog</Link> support.</p>
           <p>It also has built in <Link to="/docs">documentation</Link> support.</p>
           <p>This page is rendered from a <Link to={getBlobLink('/src/pages/index.js')}>javascript file</Link> using React.</p>
-          <p>The blog and doc pages are written in Markdown (<Link to={getBlobLink('src/docs')}>docs</Link> + <Link to={getBlobLink('src/blog')}>blog</Link>).</p>
+          <p>The blog and doc pages are written in Markdown (<Link to={getFolderLink('docs')}>docs</Link> + <Link to={getFolderLink('blog')}>blog</Link>).</p>
           <p>Check out the <Link to="/blog/2021/06/12/trying-out-docusaurus">first blog post</Link> for a walk-through of how this site was created.</p>
         </div>
       </main>
