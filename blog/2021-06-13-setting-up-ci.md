@@ -8,11 +8,7 @@ description: Setting up CI for a site built using Docusaurus.
 hide_table_of_contents: false
 ---
 
-<<<<<<< HEAD
-I demonstrated in [yesterday's blog][yesterday], the simple process of setting up Docusaurus to be run locally.
-=======
 In [yesterday's blog][yesterday], the simple process of setting up Docusaurus to be run locally was demonstrated.
->>>>>>> d728ea62f1d3bca502035c72787609adbda3bb10
 
 Today we're going through the process of getting this thing running in the cloud.
 
