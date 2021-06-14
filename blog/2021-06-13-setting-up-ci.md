@@ -131,9 +131,41 @@ Upon configuring the feature branch, a separate environment is provisioned in th
 
 ![Amplify Feature Environment Complete][amplify-feature-environment-complete]
 
-Once complete, a separate environment will be available for you to test out your feature.
+Once complete, a separate environment will be available for you to test out the feature.
 
 ![Feature Environment Screenshot][feature-environment-screenshot]
+
+## PR Previews
+
+In addition to manually added environments in the Amplify console, a setting can be enabled that allows for environments to be generated for pull requests. This setting can be found in the left hand panel as "Previews".
+
+![Amplify PR Preview Setting][amplify-pr-preview-setting]
+
+Enabling this setting installs a GitHub app on the repo, and adds behavior visible without accessing Amplify directly.
+
+![Amplify PR Preview Enabled][amplify-pr-preview-enabled]
+
+This GitHub check is visible on the PR, and doesn't require any interaction with AWS to configure. It is present whenever a pull request is created on a branch that has PR previews enabled.
+
+The `Details` link on the right side of the check links to the check that is run whenever a PR is created or updated.
+
+![GitHub Check][github-check]
+
+The `View more details on AWS Amplify` link on the right side of the check links to the environment that is created to demonstrate the changes specific to this PR.
+
+![View More Details][view-more-details]
+
+![PR Environment][pr-env]
+
+## Wrapping Up CI
+
+This post has run on a little long. Hopefully this demonstrates some of the capabilities present in getting an app hosted and continuously updated using Amplify.
+
+Note the little pencil link at the bottom left here, with the text `Edit this page`.
+
+This is a convenient feature of the default theme on Docusaurus that allows for a link to be placed on each piece of documentation or blog post. It will pull up the GitHub UI for editing files in the browser.
+
+Feel free to use this functionality if you find anything amiss in these posts!
 
 [yesterday]: /blog/2021/06/12/trying-out-docusaurus
 [amplify-getting-started]: /img/amplify-getting-started.png
@@ -157,3 +189,8 @@ Once complete, a separate environment will be available for you to test out your
 [amplify-feature-environment]: /img/amplify-feature-environment.png
 [amplify-feature-environment-complete]: /img/amplify-feature-environment-complete.png
 [feature-environment-screenshot]: /img/feature-environment-screenshot.png
+[amplify-pr-preview-setting]: /img/amplify-pr-preview-setting.png
+[amplify-pr-preview-enabled]: /img/amplify-pr-preview-enabled.png
+[github-check]: /img/github-check.png
+[view-more-details]: /img/view-more-details.png
+[pr-env]: /img/pr-env.png
