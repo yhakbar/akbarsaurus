@@ -40,11 +40,12 @@ export default function Home() {
             height: '50vh',
             fontSize: '20px',
           }}>
-          <p>Docusaurus Features:</p>
+          <p>Exploring Docusaurus:</p>
           <p>It has built in <Link to="/blog">blog</Link> support.</p>
           <p>It also has built in <Link to="/docs">documentation</Link> support.</p>
           <p>This page is rendered from a <Link to={getBlobLink('/src/pages/index.js')}>javascript file</Link> using React.</p>
           <p>The blog and doc pages are written in Markdown (<Link to={getBlobLink('src/docs')}>docs</Link> + <Link to={getBlobLink('src/blog')}>blog</Link>).</p>
+          <p>Check out the <Link to="/blog/2021/06/12/trying-out-docusaurus">first blog post</Link> for a walk-through of how this site was created.</p>
         </div>
       </main>
     </Layout >
