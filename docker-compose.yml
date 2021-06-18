@@ -1,0 +1,16 @@
+---
+services:
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - 8080:80
+  dev:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
