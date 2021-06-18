@@ -14,4 +14,4 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 FROM build as dev
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "docker-start"]
